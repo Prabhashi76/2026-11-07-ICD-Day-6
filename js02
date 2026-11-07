@@ -10,21 +10,49 @@ console.log("hello");
 // console.log(Customer);
 
 
-class Customer {
-    name;
-    age;
-    address;
+//class Customer {
+  //  name;
+    //age;
+   // address;
 
-    constructor(name, age, address) {
-        this.name = name;
-        this.age = age;
-        this.address = address;
-    }
+    //constructor(name, age, address) {
+      //  this.name = name;
+        //this.age = age;
+       // this.address = address;
+    //}
+
+//}
+
+//let customer1 = new Customer("John Doe", 30, "123 Main St, Anytown, USA");
+//let customer2 = new Customer("Jane Smith", 25, "456 Elm St, Othertown, USA");
+
+//console.log(customer1);
+//console.log(customer2);
+
+
+function btnAddOnAction() {
+    let inputnum1 =document.getElementById("txtNum1").value;
+    let inputnum2 =document.getElementById("txtNum2").value;
+
+    console.log(inputnum1);
+    console.log(inputnum2);
+
+    let result = parseInt(inputnum1) + parseInt(inputnum2);
+    outPut.innerText = "Result is - " + result;
+    console.log(result);
 
 }
 
-let customer1 = new Customer("John Doe", 30, "123 Main St, Anytown, USA");
-let customer2 = new Customer("Jane Smith", 25, "456 Elm St, Othertown, USA");
+function btnSubtractOnAction() {
+   let inputnum1 =document.getElementById("txtNum1").value;
+    let inputnum2 =document.getElementById("txtNum2").value;
 
-console.log(customer1);
-console.log(customer2);
+    console.log(inputnum1);
+    console.log(inputnum2);
+
+    let result = parseInt(inputnum1) - parseInt(inputnum2);
+    outPut.innerText = "Result is - " + result;
+    console.log(result);
+
+
+}
